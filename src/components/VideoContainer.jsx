@@ -9,8 +9,8 @@ function VideoContainer({video, showComments, handleShowButtonClick}) {
  
   return (
     <div className="video-container" width="700px"> 
-      <Video video={video}/>
-      <Voting video={video}/>
+      <Video title={video.title} embedUrl={video.embedUrl} createdAt={video.createdAt} views={video.views}/>
+      <Voting upvotes={video.upvotes} downvotes={video.downvotes}/>
       <ShowCommentsButton showComments={showComments} handleShowButtonClick={handleShowButtonClick}/>
       <LineSeprator/>
     </div>

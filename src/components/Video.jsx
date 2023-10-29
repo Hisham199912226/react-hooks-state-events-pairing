@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Video({video : {title, embedUrl, views, createdAt}}) {
+function Video({title, embedUrl, views, createdAt}) {
   return (
     <>
         <div className="video-container-item">

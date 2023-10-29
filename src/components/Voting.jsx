@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faThumbsUp,faThumbsDown } from '@fortawesome/free-solid-svg-icons'
 
-function Voting({video : {upvotes, downvotes}}) {
+function Voting({upvotes, downvotes}) {
   const [upVotes, setUpVotes] = useState(upvotes);
   const [downVotes, setDownVotes] = useState(downvotes);
   
